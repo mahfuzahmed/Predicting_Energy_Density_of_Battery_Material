@@ -11,4 +11,10 @@ def load_dataset(filename: str) -> DataFrame:
     return data_set
 
 
+properties = ["CAPACITY", "VOLTAGE", "COULOMBIC_EFFICIENCY", "ENERGY", "CONDUCTIVITY"]
+
+dfs = [pd.read_csv(f"Data/Cleaned_Molecular_Weight/{prop}_with_molecular_weight_clean.csv") for prop in properties]
+combined_vertical = pd.concat(dfs, ignore_index=True)
+
+combined_vertical.to_csv("Data/Merged/Combined_all_data_with_molecular_weight_clean.csv", index=False)
 
