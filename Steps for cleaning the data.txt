@@ -1,0 +1,35 @@
+Steps for cleaning the data
+
+1. Upload to SAS
+2. Separate property tables: "CAPACITY", "VOLTAGE", "COULOMBIC_EFFICIENCY", "ENERGY", "CONDUCTIVITY"
+
+with Name, Formula, Value, SI Unit and Type
+
+3. Use python to clean None values
+
+------- Create clean table (split later on for train/test data set for ML model) ---- must
+
+------- Create missing table (train/test dataset) ---- maybe idk
+
+4. Rename "Name" column headers manually for the 5 separate file to for the clean tables stored
+
+5. Remove missing rows
+
+5. Create molecular weight column for each and save as separate CSVs
+
+-------- Do I analyse with separate tables to figure out ideal properties
+
+6. Merge based on weight:
+
+-------- What if one table has multiple
+
+
+7. Decided to create distinct files for each of the 5 csv files
+
+8. Merged them 
+
+9. Removed duplicates again
+
+10. Impute missing values
+
+11. Remove missing values 

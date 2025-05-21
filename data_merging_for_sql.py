@@ -34,4 +34,4 @@ merged = merged.merge(voltage[["Molecular_weight", "Voltage_in_V"]], on="Molecul
 merged = merged.merge(coulombs[["Molecular_weight", "Efficiency_in_percent"]], on="Molecular_weight", how="inner")
 merged = merged.merge(conductivity[["Molecular_weight", "Conductivity_in_Siemens_per_cm"]], on="Molecular_weight", how="right")
 
-merged.to_csv("Data/Merged/Combined_all_properties_with_molecular_weight.csv", index=False)
+merged.to_csv("Data/Failed_Combined/Combined_all_properties_with_molecular_weight.csv", index=False)

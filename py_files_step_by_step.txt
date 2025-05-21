@@ -1,0 +1,15 @@
+1. data_cleaning ----- initial cleaning of data
+
+2. data_pre_processing.py ----- created molecular weight
+
+3. data_combining_vertical.py ----- vertical integration of all the data (failed step)
+
+4. data_merging_for_sql.py ----- tried to integrate them horizontally (failed step)
+
+5. further_cleaning.py ----- actually did some cleaning, renamed columns , dropped non-essential columns, stored separately
+
+6. find_distinct_compounds.py ----- created 5 CSVs each with distinct values by Compound name and molecular weight
+
+7. distinct_data_merging.py ----- merged the distinct tables to get one final table
+
+8. final_cleaning_steps.py ----- cleaned up the final tables, dropped conductivity column, dropped na values, dropped na rows
