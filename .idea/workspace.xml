@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92211eaf-0939-4e4e-a3d7-41da0451139e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eda_battery_data_scaled.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature_scaling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature_scaling_normalization_V2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_cleaning_V2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unsupervised_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Failed_Combined/Combined_all_properties_with_molecular_weight.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Failed_Combined/Combined_some_properties_with_molecular_weight.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Merged/Distinct_Name_All_Properties_Merged_V3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Merged/Distinct_Weight_All_Properties_Merged_V3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged_V3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Scaled_dataset/Normalized_dataset_V3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Scaled_dataset/Scaled_dataset_V3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distinct_data_merging_V2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_cleaning_V3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_cleaning_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_cleaning_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/py_files_step_by_step.txt" beforeDir="false" afterPath="$PROJECT_DIR$/py_files_step_by_step.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFs/Results_ EDA_1_Summary Statistics.ctk.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFs/Results_ EDA_1_Summary Statistics_V2.ctk.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eda_battery_data_scaled.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_scaling_normalization_V2.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_scaling_normalization_V2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unsupervised_learning.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,30 +45,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.data_cleaner.executor": "Run",
-    "Python.data_cleaning.executor": "Run",
-    "Python.data_combining.executor": "Run",
-    "Python.data_merging_for_sql.executor": "Run",
-    "Python.data_pre_processing.executor": "Run",
-    "Python.distinct_data_merging.executor": "Run",
-    "Python.eda_battery_data_scaled.executor": "Run",
-    "Python.feature_scaling.executor": "Run",
-    "Python.feature_scaling_normalization_V2.executor": "Run",
-    "Python.final_cleaning_V2.executor": "Run",
-    "Python.final_cleaning_steps.executor": "Run",
-    "Python.find_distinct_compounds.executor": "Run",
-    "Python.further_cleaning.executor": "Run",
-    "Python.second_type_cleaned.executor": "Run",
-    "Python.unsupervised_learning.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mahfu/OneDrive - Personal/Documents/PycharmProjects/Thesis_Project/Data/Cleaned",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.data_cleaner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_cleaning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_combining.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_merging_for_sql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_pre_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.distinct_data_merging.executor&quot;: &quot;Run&quot;,
+    &quot;Python.distinct_data_merging_V2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eda_battery_data_scaled.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_scaling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_scaling_normalization_V2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_V2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_V3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_steps.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find_distinct_compounds.executor&quot;: &quot;Run&quot;,
+    &quot;Python.further_cleaning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.second_type_cleaned.executor&quot;: &quot;Run&quot;,
+    &quot;Python.supervised_learning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.unsupervised_learning.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mahfu/OneDrive - Personal/Documents/PycharmProjects/Thesis_Project/Data/Cleaned&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mahfu\OneDrive - Personal\Documents\PycharmProjects\Thesis_Project\Data\Cleaned" />
@@ -72,7 +81,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.feature_scaling_normalization_V2">
-    <configuration name="feature_scaling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="eda_battery_data_scaled" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Thesis_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,7 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_scaling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eda_battery_data_scaled.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +147,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="final_cleaning_steps" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="final_cleaning_V3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Thesis_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,7 +160,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_cleaning_steps.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_cleaning_V3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,7 +191,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="unsupervised_learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="supervised_learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Thesis_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,7 +204,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unsupervised_learning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/supervised_learning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,10 +216,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.feature_scaling_normalization_V2" />
+        <item itemvalue="Python.final_cleaning_V3" />
+        <item itemvalue="Python.supervised_learning" />
+        <item itemvalue="Python.eda_battery_data_scaled" />
         <item itemvalue="Python.final_cleaning_V2" />
-        <item itemvalue="Python.feature_scaling" />
-        <item itemvalue="Python.final_cleaning_steps" />
-        <item itemvalue="Python.unsupervised_learning" />
       </list>
     </recent_temporary>
   </component>
