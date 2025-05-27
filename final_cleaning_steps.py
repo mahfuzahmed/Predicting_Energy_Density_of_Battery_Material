@@ -11,8 +11,8 @@ name_dataset_cleaned = name_dataset.dropna(subset=critical_columns)
 
 # Step 2: Impute missing values
 # Impute 'Voltage_in_V' and 'Efficiency_in_percent' with median
-name_dataset_cleaned['Voltage_in_V'].fillna(name_dataset_cleaned['Voltage_in_V'].median(), inplace=True)
-name_dataset_cleaned['Efficiency_in_percent'].fillna(name_dataset_cleaned['Efficiency_in_percent'].median(), inplace=True)
+name_dataset_cleaned['Voltage_in_V'].fillna(name_dataset_cleaned['Voltage_in_V'].mean(), inplace=True)
+name_dataset_cleaned['Efficiency_in_percent'].fillna(name_dataset_cleaned['Efficiency_in_percent'].mean(), inplace=True)
 
 # Step 3: Drop 'Conductivity_in_Siemens_per_cm' due to excessive missing values
 name_dataset_cleaned.drop(columns=['Conductivity_in_Siemens_per_cm'], inplace=True)
@@ -23,6 +23,7 @@ name_dataset_cleaned.reset_index(drop=True, inplace=True)
 name_dataset_cleaned = name_dataset_cleaned.drop_duplicates(subset=["Compound_name"])
 name_dataset_cleaned = name_dataset_cleaned.drop_duplicates(subset=["Molecular_weight"])
 
+name_dataset_cleaned['Type'] = name_dataset_cleaned['Type'].replace({'Cath': 'Cathode', 'Anod': 'Anode'})
 
 # Save cleaned dataset
 name_dataset_cleaned.to_csv("Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged.csv", index=False)

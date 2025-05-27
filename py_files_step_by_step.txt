@@ -1,6 +1,6 @@
-1. data_cleaning ----- initial cleaning of data
+1. data_cleaning ----- initial cleaning of data (divided each table into missing and cleaned)
 
-2. data_pre_processing.py ----- created molecular weight
+2. data_pre_processing.py ----- created a column molecular weight based of the Extracted Name column (parsed it and used a dictionary to calculate the molecular mass of the given formulae of the compound)
 
 3. data_combining_vertical.py ----- vertical integration of all the data (failed step)
 
