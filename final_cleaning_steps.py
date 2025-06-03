@@ -1,36 +1,29 @@
 import pandas as pd
 
-name_dataset = pd.read_csv("Data/Merged/Distinct_Name_All_Properties_Merged.csv")
+# Load data
+name_dataset = pd.read_csv("Data/Merged/Distinct_Name_All_Properties_Merged_V3.csv")
 print("--------------------------\nInitial info\n--------------------------\n")
 print(name_dataset.info())
 print(name_dataset.head())
 
-# Step 1: Drop rows with missing values in critical columns
-critical_columns = ['Compound_name', 'Extracted_name', 'Type', 'Capacity_per_gram_in_mAh']
-name_dataset_cleaned = name_dataset.dropna(subset=critical_columns)
+name_dataset.drop(columns=['Conductivity_in_Siemens_per_cm'], inplace=True)
 
-# Step 2: Impute missing values
-# Impute 'Voltage_in_V' and 'Efficiency_in_percent' with median
-name_dataset_cleaned['Voltage_in_V'].fillna(name_dataset_cleaned['Voltage_in_V'].mean(), inplace=True)
-name_dataset_cleaned['Efficiency_in_percent'].fillna(name_dataset_cleaned['Efficiency_in_percent'].mean(), inplace=True)
+df_cleaned = name_dataset.dropna(subset=["Compound_name"])
+df_cleaned = df_cleaned.dropna(subset=["Extracted_name"])
 
-# Step 3: Drop 'Conductivity_in_Siemens_per_cm' due to excessive missing values
-name_dataset_cleaned.drop(columns=['Conductivity_in_Siemens_per_cm'], inplace=True)
+df_cleaned = df_cleaned.drop_duplicates(subset=["Compound_name"])
+df_cleaned = df_cleaned.drop_duplicates(subset=["Molecular_weight"])
 
-# Optional: Reset index
-name_dataset_cleaned.reset_index(drop=True, inplace=True)
+df_cleaned["Efficiency_in_percent"].fillna(df_cleaned["Efficiency_in_percent"].median(), inplace=True)
+df_cleaned["Voltage_in_V"].fillna(df_cleaned["Voltage_in_V"].median(), inplace=True)
 
-name_dataset_cleaned = name_dataset_cleaned.drop_duplicates(subset=["Compound_name"])
-name_dataset_cleaned = name_dataset_cleaned.drop_duplicates(subset=["Molecular_weight"])
+df_cleaned["Energy_in_Watt_hour_per_kg"] = df_cleaned["Energy_in_Watt_hour_per_kg"]
+df_cleaned["Energy_in_Watt_hour_per_kg"].fillna((df_cleaned['Capacity_per_gram_in_mAh'] * df_cleaned['Voltage_in_V']), inplace=True)
 
-name_dataset_cleaned['Type'] = name_dataset_cleaned['Type'].replace({'Cath': 'Cathode', 'Anod': 'Anode'})
+df_cleaned["Type"] = df_cleaned["Type"].str.strip().str.capitalize()
+df_cleaned['Type'] = df_cleaned['Type'].replace({'Cath': 'Cathode', 'Anod': 'Anode'})
 
-# Save cleaned dataset
-name_dataset_cleaned.to_csv("Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged.csv", index=False)
+print(df_cleaned.info())
+print(df_cleaned.head())
 
-# Preview cleaned data
-print(name_dataset_cleaned.info())
-print(name_dataset_cleaned.head())
-
-
-
+df_cleaned.to_csv("Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged_V3.csv", index=False)

@@ -20,7 +20,7 @@ def load_dataset_name(filename: str) -> DataFrame:
     return data_set
 
 
-properties = ["CAPACITY", "VOLTAGE", "COULOMBIC_EFFICIENCY", "CONDUCTIVITY"]
+properties = ["CAPACITY", "VOLTAGE", "COULOMBIC_EFFICIENCY", "CONDUCTIVITY", "ENERGY"]
 
 capacity = load_dataset_weight(properties[0])
 capacity = capacity[["Compound_name", "Extracted_name", "Molecular_weight", "Type", "Capacity_per_gram_in_mAh"]]
@@ -35,14 +35,19 @@ conductivity = load_dataset_weight(properties[3])
 conductivity = conductivity[
     ["Compound_name", "Extracted_name", "Molecular_weight", "Type", "Conductivity_in_Siemens_per_cm"]]
 
+energy = load_dataset_weight(properties[4])
+energy = energy[
+    ["Compound_name", "Extracted_name", "Molecular_weight", "Type", "Energy_in_Watt_hour_per_kg"]]
+
 merged = capacity.copy()
 merged = merged.merge(voltage[["Molecular_weight", "Voltage_in_V"]], on="Molecular_weight", how="outer")
 merged = merged.merge(coulombs[["Molecular_weight", "Efficiency_in_percent"]], on="Molecular_weight", how="outer")
 merged = merged.merge(conductivity[["Molecular_weight", "Conductivity_in_Siemens_per_cm"]], on="Molecular_weight",
                       how="outer")
+merged = merged.merge(energy[["Molecular_weight", "Energy_in_Watt_hour_per_kg"]], on="Molecular_weight", how="outer")
 
 # merged = merged.dropna()
-merged.to_csv("Data/Merged/Distinct_Weight_All_Properties_Merged.csv", index=False)
+merged.to_csv("Data/Merged/Distinct_Weight_All_Properties_Merged_V3.csv", index=False)
 
 #########################################################################################################################################
 
@@ -60,12 +65,17 @@ conductivity = load_dataset_name(properties[3])
 conductivity = conductivity[
     ["Compound_name", "Extracted_name", "Molecular_weight", "Type", "Conductivity_in_Siemens_per_cm"]]
 
+energy = load_dataset_name(properties[4])
+energy = energy[
+    ["Compound_name", "Extracted_name", "Molecular_weight", "Type", "Energy_in_Watt_hour_per_kg"]]
+
 merged = capacity.copy()
 merged = merged.merge(voltage[["Molecular_weight", "Voltage_in_V"]], on="Molecular_weight", how="outer")
 merged = merged.merge(coulombs[["Molecular_weight", "Efficiency_in_percent"]], on="Molecular_weight", how="outer")
 merged = merged.merge(conductivity[["Molecular_weight", "Conductivity_in_Siemens_per_cm"]], on="Molecular_weight", how="outer")
+merged = merged.merge(energy[["Molecular_weight", "Energy_in_Watt_hour_per_kg"]], on="Molecular_weight", how="outer")
 
 # merged = merged.dropna(how='all')
 # merged = merged.dropna()
 # merged = merged.drop_duplicates(subset=["Compound_name"])
-merged.to_csv("Data/Merged/Distinct_Name_All_Properties_Merged.csv", index=False)
+merged.to_csv("Data/Merged/Distinct_Name_All_Properties_Merged_V3.csv", index=False)
