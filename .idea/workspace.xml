@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92211eaf-0939-4e4e-a3d7-41da0451139e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/eda.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eda_v4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_cleaning_steps_v4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scaling_normalizing_v4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unsupervised_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseline_unsupervised learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/un_sup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged_V3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Merged_Cleaned/Distinct_Name_All_Properties_Merged_V3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Scaled_dataset/Normalized_dataset_V3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Scaled_dataset/Normalized_dataset_V3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Scaled_dataset/Scaled_dataset_V3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDFs/Results_ EDA_1_Summary Statistics.ctk.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDFs/Results_ EDA_1_Summary Statistics_V2.ctk.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/distinct_data_merging.py" beforeDir="false" afterPath="$PROJECT_DIR$/distinct_data_merging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distinct_data_merging_V2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_scaling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_scaling_normalization_V2.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_scaling_normalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_cleaning_V2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_cleaning_V3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_cleaning_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_cleaning_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unsupervised_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/unsupervised_learning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.baseline_unsupervised learning.executor": "Run",
     "Python.data_cleaner.executor": "Run",
     "Python.data_cleaning.executor": "Run",
     "Python.data_combining.executor": "Run",
@@ -73,6 +60,7 @@
     "Python.scaling_normalizing_v4.executor": "Run",
     "Python.second_type_cleaned.executor": "Run",
     "Python.supervised_learning.executor": "Run",
+    "Python.un_sup.executor": "Run",
     "Python.unsupervised_learning.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -90,8 +78,8 @@
       <recent name="C:\Users\mahfu\OneDrive - Personal\Documents\PycharmProjects\Thesis_Project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.eda_v4">
-    <configuration name="eda" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.baseline_unsupervised learning">
+    <configuration name="baseline_unsupervised learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Thesis_Project" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,7 +92,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eda.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baseline_unsupervised learning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,50 +115,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eda_v4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="feature_scaling_normalization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Thesis_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_scaling_normalization.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="final_cleaning_steps_v4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Thesis_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_cleaning_steps_v4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,13 +167,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="un_sup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thesis_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/un_sup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="unsupervised_learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thesis_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unsupervised_learning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.baseline_unsupervised learning" />
+        <item itemvalue="Python.unsupervised_learning" />
+        <item itemvalue="Python.un_sup" />
         <item itemvalue="Python.eda_v4" />
         <item itemvalue="Python.scaling_normalizing_v4" />
-        <item itemvalue="Python.final_cleaning_steps_v4" />
-        <item itemvalue="Python.eda" />
-        <item itemvalue="Python.feature_scaling_normalization" />
       </list>
     </recent_temporary>
   </component>

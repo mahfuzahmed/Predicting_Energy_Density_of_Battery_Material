@@ -31,7 +31,7 @@ kmeans_labels = kmeans.fit_predict(scaled_features)
 kmeans_silhouette = silhouette_score(scaled_features, kmeans_labels)
 
 # --- DBSCAN Clustering ---
-dbscan = DBSCAN(eps=1.0, min_samples=5)
+dbscan = DBSCAN(eps=2, min_samples=5)
 dbscan_labels = dbscan.fit_predict(scaled_features)
 # Handle case where all points might be noise
 if len(set(dbscan_labels)) > 1:
