@@ -1,0 +1,1 @@
+Main Data Source: https://figshare.com/articles/dataset/A_database_of_battery_materials_auto-generated_using_ChemDataExtractor/11888115/2
