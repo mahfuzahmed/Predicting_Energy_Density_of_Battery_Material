@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="92211eaf-0939-4e4e-a3d7-41da0451139e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/Thesis.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/Thesis.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/Thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/Thesis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/~$Thesis.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/30116946_Thesis.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/30116946_Thesis.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documents/30116946_Thesis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/30116946_Thesis.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,44 +33,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.attempt_one (1).executor": "Run",
-    "Python.attempt_three.executor": "Run",
-    "Python.attempt_two.executor": "Run",
-    "Python.baseline_unsupervised learning.executor": "Run",
-    "Python.data_cleaner.executor": "Run",
-    "Python.data_cleaning.executor": "Run",
-    "Python.data_combining.executor": "Run",
-    "Python.data_merging_for_sql.executor": "Run",
-    "Python.data_pre_processing.executor": "Run",
-    "Python.distinct_data_merging.executor": "Run",
-    "Python.distinct_data_merging_V2.executor": "Run",
-    "Python.eda.executor": "Run",
-    "Python.eda_battery_data_scaled.executor": "Run",
-    "Python.eda_v4.executor": "Run",
-    "Python.feature_scaling.executor": "Run",
-    "Python.feature_scaling_normalization.executor": "Run",
-    "Python.feature_scaling_normalization_V2.executor": "Run",
-    "Python.final_cleaning_V2.executor": "Run",
-    "Python.final_cleaning_V3.executor": "Run",
-    "Python.final_cleaning_steps (1).executor": "Run",
-    "Python.final_cleaning_steps.executor": "Run",
-    "Python.final_cleaning_steps_v4.executor": "Run",
-    "Python.find_distinct_compounds.executor": "Run",
-    "Python.further_cleaning.executor": "Run",
-    "Python.scaling_normalizing_v4.executor": "Run",
-    "Python.second_type_cleaned.executor": "Run",
-    "Python.supervised_learning.executor": "Run",
-    "Python.un_sup.executor": "Run",
-    "Python.unsupervised_learning.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mahfu/OneDrive - Personal/Documents/PycharmProjects/Thesis_Project/Data/Cleaned",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.attempt_one (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.attempt_three.executor&quot;: &quot;Run&quot;,
+    &quot;Python.attempt_two.executor&quot;: &quot;Run&quot;,
+    &quot;Python.baseline_unsupervised learning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_cleaner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_cleaning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_combining.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_merging_for_sql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_pre_processing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.distinct_data_merging.executor&quot;: &quot;Run&quot;,
+    &quot;Python.distinct_data_merging_V2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eda.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eda_battery_data_scaled.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eda_v4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_scaling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_scaling_normalization.executor&quot;: &quot;Run&quot;,
+    &quot;Python.feature_scaling_normalization_V2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_V2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_V3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_steps (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_steps.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_cleaning_steps_v4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find_distinct_compounds.executor&quot;: &quot;Run&quot;,
+    &quot;Python.further_cleaning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scaling_normalizing_v4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.second_type_cleaned.executor&quot;: &quot;Run&quot;,
+    &quot;Python.supervised_learning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.un_sup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.unsupervised_learning.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mahfu/OneDrive - Personal/Documents/PycharmProjects/Thesis_Project/Data/Cleaned&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mahfu\OneDrive - Personal\Documents\PycharmProjects\Thesis_Project\Data\Cleaned" />
